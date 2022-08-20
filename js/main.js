@@ -110,7 +110,7 @@ $(function() {
     delay: 2500,
     trailWidth: 7,
     step: function(state, circle) {
-      var value = Math.round(0.6 * 100);
+      var value = Math.round(0.65 * 100);
       if (value === 0) {
         circle.setText('');
       } else {
@@ -119,7 +119,7 @@ $(function() {
     }
   });
 
-  bar.animate(1);
+  bar.animate(0.65);
 
   var bar = new ProgressBar.Circle(circleprog2, {
     strokeWidth: 7,
@@ -137,7 +137,7 @@ $(function() {
     }
   });
 
-  bar.animate(0.9);
+  bar.animate(0.7);
 
   var bar = new ProgressBar.Circle(circleprog3, {
     strokeWidth: 7,
@@ -155,7 +155,7 @@ $(function() {
     }
   });
 
-  bar.animate(0.7);
+  bar.animate(0.8);
 
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
@@ -168,7 +168,7 @@ $(function() {
       height: '100%'
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
+      bar.setText(Math.round(0.9 * 100) + ' %');
     }
   });
 
@@ -189,7 +189,7 @@ $(function() {
     }
   });
 
-  bar.animate(.95);
+  bar.animate(.75);
 
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
@@ -206,7 +206,7 @@ $(function() {
     }
   });
 
-  bar.animate(.75);
+  bar.animate(.7);
 
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
@@ -219,7 +219,7 @@ $(function() {
       height: '100%'
     },
     step: (state, bar) => {
-      bar.setText(Math.round(0.55 * 100) + ' %');
+      bar.setText(Math.round(0.65 * 100) + ' %');
     }
   });
 
@@ -236,11 +236,11 @@ $(function() {
       height: '100%'
     },
     step: (state, bar) => {
-      bar.setText(Math.round(0.55 * 100) + ' %');
+      bar.setText(Math.round(0.65 * 100) + ' %');
     }
   });
 
-  bar.animate(.85);
+  bar.animate(.65);
 
   // Contact form
   $('.art-input').keyup(function() {
